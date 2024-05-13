@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Directory Tree Example</title>
+  <style>
+    body {
+      font-size: 1rem;
+      background: #f5f5f5;
+    }
+
+    .tree {
+      position: relative;
+      background: white;
+      margin-top: 20px;
+      padding: 30px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: .85rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+    }
+
+    .tree span {
+      font-size: 13px;
+      font-style: italic;
+      letter-spacing: .4px;
+      color: #a8a8a8;
+    }
+
+    .tree .fa-folder-open,
+    .tree .fa-folder {
+      color: #80b1d3;
+    }
+
+    .tree .fa-html5 {
+      color: #f21f10;
+    }
+
+    .tree ul {
+      padding-left: 5px;
+      list-style: none;
+    }
+
+    .tree li {
+      position: relative;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .tree li:before {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      width: 10px;
+      height: 1px;
+      margin: auto;
+      content: '';
+      background-color: #666;
+    }
+
+    .tree li:after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 1px;
+      height: 100%;
+      content: '';
+      background-color: #666;
+    }
+
+    .tree li:last-child:after {
+      height: 15px;
+    }
+
+    .tree a {
+      cursor: pointer;
+    }
+
+    .tree a:hover {
+      text-decoration: none;
+    }
+    .icon {
+    width: 16px;
+    height: 16px;
+  }
+  </style>
+</head>
+<body>
+  <div class="tree">
+  <ul>
+        <li><img src="icons/folder-open-solid.svg" alt="Folder Open" class="icon"> EBUS_Levanger
+          <ul>
+            <li><img src="icons/folder-closed-solid.svg" alt="Folder Closed" class="icon"> Patient_001</li>
+            <li><img src="icons/ellipsis-vertical-solid.svg" alt="ellipsis" class="icon"></li>
+            <li><img src="icons/folder-open-solid.svg" alt="Folder Open" class="icon"> Patient_040
+              <ul>
+                <li><img src="icons/folder-open-solid.svg" alt="Folder Open" class="icon"> 10L
+                  <ul>
+                    <li><img src="icons/file-image-regular.svg" alt="File image" class="icon"> 0.png</li>
+                    <li><img src="icons/ellipsis-vertical-solid.svg" alt="ellipsis" class="icon"></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><img src="icons/folder-closed-solid.svg" alt="Folder Closed" class="icon"> EBUS_StOlavs
+        <li><img src="icons/folder-open-solid.svg" alt="Folder Open" class="icon"> frame_model
+        <ul>
+          <li><img src="icons/folder-open-solid.svg" alt="Folder Open" class="icon"> train
+          <ul>
+            <li><img src="icons/folder-closed-solid.svg" alt="Folder Closed" class="icon"> 4L</li>
+            <li><img src="icons/folder-closed-solid.svg" alt="Folder Closed" class="icon"> 4R</li>
+            <li><img src="icons/folder-closed-solid.svg" alt="Folder Closed" class="icon"> 7L</li>
+            <li><img src="icons/folder-closed-solid.svg" alt="Folder Closed" class="icon"> 7R</li>
+            <li><img src="icons/folder-closed-solid.svg" alt="Folder Closed" class="icon"> 10L</li>
+            <li><img src="icons/folder-closed-solid.svg" alt="Folder Closed" class="icon"> 10R</li>
+            <li><img src="icons/folder-closed-solid.svg" alt="Folder Closed" class="icon"> 11L</li>
+            <li><img src="icons/folder-open-solid.svg" alt="Folder Open" class="icon"> 11R
+              <ul>
+                <li><img src="icons/file-image-regular.svg" alt="File image" class="icon"> 0.png</li>
+                <li><img src="icons/ellipsis-vertical-solid.svg" alt="ellipsis" class="icon"></li>
+              </ul>
+            </li>
+          </ul>
+            <li><img src="icons/folder-closed-solid.svg" alt="Folder Closed" class="icon"> val</li>
+            <li><img src="icons/folder-closed-solid.svg" alt="Folder Closed" class="icon"> test</li>
+         </ul>
+        </li>
+  </ul>
+  </div>
+</body>
+</html>
+
+

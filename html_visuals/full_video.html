@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame Visualization</title>
+</head>
+<body>
+    <h1>Frame Visualization</h1>
+    <img id="frame" src="" alt="Frame Visualization">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Use the absolute URL to your frame directory on the remote server
+            let framePath = 'http://0.0.0.0:8000/mnt/EncryptedData1/LungNavigation/EBUS/ultrasound/EBUS_Levanger_full_videos/Patient_008/Sequence_001/';
+            let frameCount = 1586; // Set your frame count here
+            let currentFrame = 0;
+            let frameElement = document.getElementById('frame');
+
+            function updateFrame() {
+                frameElement.src = `${framePath}frame_${currentFrame}.png`;
+                currentFrame = (currentFrame + 1) % frameCount;
+            }
+
+            setInterval(updateFrame, 100); // Adjust the interval as needed (in milliseconds)
+        });
+    </script>
+</body>
+</html>
